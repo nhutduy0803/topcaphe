@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Topcaphe</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="./assets/css/font/fontawesome-free-6.1.0-web/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Oxygen+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <header>
+        <div class="img-logo">
+          <img src="./assets/css/img/Top ca phe-trong suot.png" alt="" />
+        </div>
+        <p>
+          <span><i class="fa-solid fa-hashtag"></i></span> khám phá
+        </p>
+        <p>
+          <span><i class="fa-solid fa-atom"></i></span> khuyến mãi
+        </p>
+        <div class="menu-right">
+          <ul>
+            <li><i class="fa-solid fa-bookmark"></i></li>
+            <li><i class="fa-solid fa-bell"></i></li>
+          </ul>
+        </div>
+        <li class="review">
+          <i class="fa-solid fa-pen"></i> <span>Viết review</span>
+        </li>
+
+        <img
+          onclick="user()"
+          class="user"
+          src="./assets/css/img/user.png"
+          alt="avt"
+          id="photoURL"
+        />
+
+        <div class="profile">
+          <div class="homepage">
+            <h3>Profile</h3>
+            <i class="fa-solid fa-user"></i>
+            <p id="username"></p>
+            <!-- <br /><i class="fa-solid fa-address-book"></i>
+          <p id="uid"></p> -->
+            <br />
+            <button onclick="remove()" id="sign-out">Đăng xuất</button>
+
+            <i class="fa-solid fa-envelope"></i>
+            <p id="email"></p>
+          </div>
+
+          <!-- <img src="" alt="" id="photoURL" /> -->
+        </div>
+      </header>
+      <div class="slider">
+        <div class="img-slider">
+          <img src="./assets/css/img/slider.jpg" alt="" />
+          <div class="background-slider"></div>
+          <h3 id="text"></h3>
+        </div>
+        <div class="block-search">
+          <input
+            placeholder="Tên quán , Khu vực , Kiểu quán..."
+            type="text"
+            class="quancoffee"
+          />
+          <div class="search-quan">
+            <p><i class="fa-solid fa-magnifying-glass"></i> TÌM QUÁN</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="muc_dich_ban_can">
+        <h3>Mục đích bạn cần ?</h3>
+
+        <div class="block-main-slider">
+          <div class="main-slider">
+            <div class="slider-item">
+              <img src="./assets/css/img/logo-Top ca phe.png" />
+            </div>
+            <div class="slider-item">
+              <img src="./assets/css/img/logo-Top ca phe.png" />
+            </div>
+            <div class="slider-item">
+              <img src="./assets/css/img/logo-Top ca phe.png" />
+            </div>
+            <div class="slider-item">
+              <img src="./assets/css/img/logo-Top ca phe.png" />
+            </div>
+            <div class="slider-item">
+              <img src="./assets/css/img/logo-Top ca phe.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="khu-vuc-gan-day">
+        <h3>Khu vực gần đây</h3>
+
+        <div class="block-main-slider-khu-vuc">
+          <div class="main-slider-khu-vuc">
+            <div class="slider-item">
+              <img src="./assets/css/img/logo-Top ca phe.png" />
+            </div>
+            <div class="slider-item">
+              <img src="./assets/css/img/logo-Top ca phe.png" />
+            </div>
+            <div class="slider-item">
+              <img src="./assets/css/img/logo-Top ca phe.png" />
+            </div>
+            <div class="slider-item">
+              <img src="./assets/css/img/logo-Top ca phe.png" />
+            </div>
+            <div class="slider-item">
+              <img src="./assets/css/img/logo-Top ca phe.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dia-diem-noi-bat">
+        <h3>Địa điểm nổi bật</h3>
+        <div class="container-dia-diem">
+          <div class="block-dia-diem">
+            <div class="item-dia-diem">
+              <img src="./assets/css/img/logo-Top ca phe.png" alt="" />
+            </div>
+            <div class="vi-tri-quan">
+              <h4 class="item-ten-quan"></h4>
+              <p>12 Ngõ 43 Nguyễn Phong Sắc</p>
+            </div>
+          </div>
+          <div class="block-dia-diem">
+            <div class="item-dia-diem">
+              <img src="./assets/css/img/logo-Top ca phe.png" alt="" />
+            </div>
+            <div class="vi-tri-quan">
+              <h4 class="item-ten-quan"></h4>
+              <p>12 Ngõ 43 Nguyễn Phong Sắc</p>
+            </div>
+          </div>
+          <div class="block-dia-diem">
+            <div class="item-dia-diem">
+              <img src="./assets/css/img/logo-Top ca phe.png" alt="" />
+            </div>
+            <div class="vi-tri-quan">
+              <h4 class="item-ten-quan"></h4>
+              <p>12 Ngõ 43 Nguyễn Phong Sắc</p>
+            </div>
+          </div>
+          <div class="block-dia-diem">
+            <div class="item-dia-diem">
+              <img src="./assets/css/img/logo-Top ca phe.png" alt="" />
+            </div>
+          </div>
+          <div class="block-dia-diem">
+            <div class="item-dia-diem">
+              <img src="./assets/css/img/logo-Top ca phe.png" alt="" />
+            </div>
+            <div class="vi-tri-quan">
+              <h4 class="item-ten-quan"></h4>
+              <p>12 Ngõ 43 Nguyễn Phong Sắc</p>
+            </div>
+          </div>
+          <div class="block-dia-diem">
+            <div class="item-dia-diem">
+              <img src="./assets/css/img/logo-Top ca phe.png" alt="" />
+            </div>
+            <div class="vi-tri-quan">
+              <h4 class="item-ten-quan"></h4>
+              <p>12 Ngõ 43 Nguyễn Phong Sắc</p>
+            </div>
+          </div>
+          <div class="block-dia-diem">
+            <div class="item-dia-diem">
+              <img src="./assets/css/img/logo-Top ca phe.png" alt="" />
+            </div>
+            <div class="vi-tri-quan">
+              <h4 class="item-ten-quan"></h4>
+              <p>12 Ngõ 43 Nguyễn Phong Sắc</p>
+            </div>
+          </div>
+          <div class="block-dia-diem">
+            <div class="item-dia-diem">
+              <img src="./assets/css/img/logo-Top ca phe.png" alt="" />
+            </div>
+            <div class="vi-tri-quan">
+              <h4 class="item-ten-quan"></h4>
+              <p>12 Ngõ 43 Nguyễn Phong Sắc</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dong-gop-quan">
+        <div class="svg-dong-gop-dia-diem">
+          <img src="https://toidicafe.vn/images/suggest-place.svg" alt="" />
+        </div>
+        <h3>Chúng tôi đang bỏ lỡ địa điểm nào bạn biết ?</h3>
+        <span>Đóng góp địa điểm</span>
+      </div>
+
+      <div class="footer">
+        <div class="logo-footer">
+          <!-- <h4>Top cà phê</h4> -->
+          <div class="box-logo-footer">
+            <img
+              src="./assets/css/img/Top_ca_phe-trong_suot-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <span> Hợp tác với chúng tôi</span>
+        </div>
+        <div class="ve-chung-toi">
+          <h5>về chúng tôi</h5>
+          <ul>
+            <li>Giới thiệu</li>
+            <li>Giải đáp thắc mắc</li>
+            <li>Liên hệ - góp Ý</li>
+            <li>Điều khoản sử dụng</li>
+          </ul>
+        </div>
+
+        <div class="theo-doi-chung-toi-tren">
+          <h5>Theo giỏi chúng tôi trên</h5>
+          <li><i class="fa-brands fa-facebook-f"></i> Facebook</li>
+          <li><i class="fa-brands fa-instagram"></i> Instgram</li>
+          <li><i class="fa-brands fa-tiktok"></i> Tiktok</li>
+        </div>
+
+        <div class="line-ban-quyen">
+          <span>Bản quyền © 2022 <a href="#">TOIDICAFE.VN</a></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-login">
+      <div class="boxlogin">
+        <h4>Đăng nhập tài khoản</h4>
+        <div class="button-login-google">
+          <button id="login-google">
+            <a href="#">Đăng nhập bằng google</a>
+          </button>
+          <button id="tieptucgmail" onclick="openlogin1()">
+            <a href="#">Tiếp tục bằng gmail</a>
+          </button>
+          <p>
+            Bạn chưa có tài khoản ? <span onclick="openlogin2()">Đăng Ký</span>
+          </p>
+        </div>
+        <!-- <div id="render">Show!</div> -->
+        <div class="login-1">
+          <input
+            type="email"
+            placeholder="Email"
+            autocomplete="false"
+            id="email-1"
+          />
+          <input type="password" placeholder="Password" id="password-1" />
+          <button id="login-with-email-and-pass"><a href="#">Login</a></button>
+          <div id="show-error"></div>
+        </div>
+
+        <div class="login-2">
+          <h3>Đăng Ký</h3>
+          <input
+            type="email"
+            placeholder="VD: example@gmail.com"
+            autocomplete="false"
+            id="email2"
+          />
+          <input
+            type="password"
+            placeholder="Vui lòng nhập ít nhất 6 ký tự"
+            id="password2"
+          />
+          <button id="login-with-email-and-pass2"><a href="#">Login</a></button>
+          <div id="show-error2"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module">
+      //   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js"; // cái này rất cần thiết và quan trọng
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
+      import {
+        getAuth,
+        signInWithPopup,
+        GoogleAuthProvider,
+        onAuthStateChanged,
+        signOut,
+        createUserWithEmailAndPassword,
+        signInWithEmailAndPassword,
+      } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-auth.js"; // cái này rất quan trọng from "https://www.gstatic.com/firebasejs/9.4.1/firebase-auth.js";
+      // signInWithPopup là đăng nhập bằng popup login của google
+      // getAuth là câu lệnh để gọi đến cái auth của project
+      const firebaseConfig = {
+        // apiKey: "AIzaSyBR8vxo1xg3H41To4QrCvFjqy0BvNottsQ",
+        // authDomain: "login-js-b9f3c.firebaseapp.com",
+        // projectId: "login-js-b9f3c",
+        // storageBucket: "login-js-b9f3c.appspot.com",
+        // messagingSenderId: "232211384023",
+        // appId: "1:232211384023:web:bb741f030e2b933a0bd292",
+        // measurementId: "G-LPP3QMK0BY",
+
+        // apiKey: "AIzaSyAD31rY4i4qHSEOHo8nROzjZMuM2b-_Iq0",
+        // authDomain: "music-fbcdf.firebaseapp.com",
+        // projectId: "music-fbcdf",
+        // storageBucket: "music-fbcdf.appspot.com",
+        // messagingSenderId: "863375379262",
+        // appId: "1:863375379262:web:94d598cee5fd309d703a6f",
+        // measurementId: "G-LZ90QP66J0",
+
+        apiKey: "AIzaSyAxKSuxSFKf_3cx8yaDlM763S5wrZTpDy0",
+        authDomain: "zingmp3-96d79.firebaseapp.com",
+        projectId: "zingmp3-96d79",
+        storageBucket: "zingmp3-96d79.appspot.com",
+        messagingSenderId: "480217732784",
+        appId: "1:480217732784:web:2cf95e96439459b5498d75",
+        measurementId: "G-2TTE2HJFPC",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      // gọi đến project được khai báo bên trên
+      const auth = getAuth(app);
+
+      //setup provider
+      const provider = new GoogleAuthProvider();
+      // provider.addScope("https://www.googleapis.com/auth/contacts.readonly");
+      auth.languageCode = "it";
+      provider.setCustomParameters({
+        login_hint: "user@example.com",
+      });
+
+      // cấu trúc lệnh của signInWithPopup là : signInWithPopup(auth, provider)
+      // auth là cái đã khai báo, còn provider là cái mà bên firebase đã cho sẵn
+
+      // gọi đến button có id là login-goole, bắt sự kiện click của nó. nếu button được click thì nó sẽ chạy cái arrow function (function dạng mũi tên. ví dụ: const func = () => {...code here})
+      document.getElementById("login-google").addEventListener("click", () => {
+        signInWithPopup(auth, provider);
+        // sau khi click vào button, nó sẽ hiện lên popup login của google
+        // chọn ví dụ 1 email
+        // vậy là xong phần login bằng google
+        // quay lại firebase, chọn phần Authentication, nếu thấy gmail của mình có hiện lên tức là đã login thành công
+      });
+      // tiếp theo, để check xem người dùng đã từng login trên trang này chưa, ta dùng onAuthStateChanged của firebase cung cấp
+      // cấu trúc: onAuthStateChanged(auth, user => {})  Trong đó, user là tham số được truyền vào. user này chính là dữ liệu của người đã từng đăng nhập trên hệ thống
+
+      const renderItem = document.querySelector(".modal-login");
+      const anloginhiendangxuat = document.querySelector(".login");
+      const rendermain = document.getElementById("main");
+      // const deleteprofile = document.querySelector(".profile");
+
+      // const hiendangxuatanlogin = document.querySelector(".profile");
+      //   const ansubnav = document.querySelector(".menu");
+      //   const dongfakemenu = document.querySelector(".fakemenu");
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          /* login bằng google sẽ có các mục thông tin cần lưu ý như sau:
+          + displayName: tên tài khoản
+          + email: email tài khoản
+          + photoURL: avatar tài khoản
+          + phoneNumber: sđt liên kết với tài khoản
+          * lưu ý: nó sẽ lấy tài khoản được login gần đây nhất
+          */
+          // cách lấy thông tin: user.[thông tin mình cần lấy] lưu ý là cái thông tin mình cần lấy phải có trong cái user
+          // ví dụ muốn lấy tên người dùng: user.displayName
+          renderItem.style.display = "none";
+          rendermain.style.display = "block";
+          // anloginhiendangxuat.style.display = "none";
+          // hiendangxuatanlogin.style.display = "none";
+          // ansubnav.style.display = "block";
+          // dongfakemenu.style.display = "none";
+          console.log(user);
+          document.querySelector(".homepage > #username").innerHTML =
+            user.displayName;
+          // document.querySelector(".homepage > #uid").innerHTML = user.uid;
+          document.querySelector(".homepage > #email").innerHTML = user.email;
+          document.querySelector(" #photoURL").src = user.photoURL;
+        } else {
+          renderItem.style.display = "block";
+          anloginhiendangxuat.style.display = "block";
+          // hiendangxuatanlogin.style.display = "none";
+          ansubnav.style.display = "none";
+          dongfakemenu.style.display = "block";
+          console.log("Chưa login");
+        }
+      });
+
+      document
+        .getElementById("login-with-email-and-pass2")
+        .addEventListener("click", () => {
+          // const email2 = document.getElementById("email2").value;
+          // const password2 = document.getElementById("password2").value;
+
+          const emailHTML2 = document.getElementById("email2");
+          const passwordHTML2 = document.getElementById("password2");
+          const email2 = emailHTML2.value;
+          const password2 = passwordHTML2.value;
+
+          emailHTML2.addEventListener("input", () => {
+            hideTextError(email, 2);
+          });
+          passwordHTML2.addEventListener("input", () => {
+            hideTextError(password, 2);
+          });
+
+          createUserWithEmailAndPassword(auth, email2, password2).catch(
+            (error) => {
+              // hiện lỗi
+              const errorCode = error.code; // tóm tắt lỗi
+              const errorShow = document.getElementById("show-error2");
+              switch (errorCode) {
+                case "auth/weak-password":
+                  errorShow.innerHTML = "mật khẩu của bạn quá yếu";
+                  break;
+                case "auth/invalid-email":
+                  errorShow.innerHTML = "bạn chưa nhập email...";
+                  break;
+                case "auth/invalid-password":
+                  errorShow.innerHTML = "bạn chưa nhập mật khẩu";
+                  break;
+                case "auth/email-already-in-use":
+                  errorShow.innerHTML = "email của bạn đã tồn tại";
+                  break;
+                default:
+                  errorShow.innerHTML = "có lỗi vui lòng kiểm tra lại";
+                  break;
+              }
+            }
+          );
+        });
+
+      document
+        .getElementById("login-with-email-and-pass")
+        .addEventListener("click", () => {
+          // const email = document.getElementById("email-1").value;
+          // const password = document.getElementById("password-1").value;
+
+          const emailHTML = document.getElementById("email-1");
+          const passwordHTML = document.getElementById("password-1");
+          const email = emailHTML.value;
+          const password = passwordHTML.value;
+
+          emailHTML.addEventListener("input", () => {
+            hideTextError(email - 1, 1);
+          });
+          passwordHTML.addEventListener("input", () => {
+            hideTextError(password - 1, 1);
+          });
+
+          // signInWithEmailAndPassword dùng để login bằng email và pass
+          // cấu trúc: signInWithEmailAndPassword(auth, email, password)
+          // nếu nhập đúng tài khoản và mật khẩu thì nó sẽ login
+
+          signInWithEmailAndPassword(auth, email, password).catch((error) => {
+            const errorCode = error.code; // tóm tắt lỗi
+            const errorShow = document.getElementById("show-error");
+            switch (errorCode) {
+              case "auth/user-not-found":
+                errorShow.innerHTML = "Không tìm thấy user này";
+                break;
+              case "auth/wrong-password":
+                errorShow.innerHTML = " mật khẩu không đúng";
+                break;
+              case "auth/invalid-email":
+                errorShow.innerHTML = "bạn chưa nhập email...";
+                break;
+              default:
+                errorShow.innerHTML = "lỗi không xác định ...";
+                console.log(errorCode);
+                break;
+            }
+          });
+
+          // createUserWithEmailAndPassword  dùng để tạo tk từ email và mật khẩu
+          // cấu trúc: createUserWithEmailAndPassword(auth, email, password)
+          // để lấy được lỗi của nó, code như sau
+          // sau khi tạo tài khoản thành công, nó sẽ tự login
+        });
+      document.getElementById("sign-out").addEventListener("click", () => {
+        //signOut dùng để đăng xuất tk gần nhất
+        // deleteprofile.style.display = "none";
+        renderItem.style.display = "none";
+        // cấu trúc: signOut(auth)
+        signOut(auth);
+      });
+
+      function hideTextError(method, type) {
+        if (method) {
+          switch (type) {
+            case 1:
+              document.querySelector("#show-error").innerHTML = "";
+              break;
+
+            case 2:
+              document.querySelector("#show-error2").innerHTML = "";
+              break;
+          }
+        }
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
